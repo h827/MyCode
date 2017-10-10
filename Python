@@ -1,0 +1,107 @@
+# MyCode
+#coding=gbk
+
+20171010-1
+temp = input("Guess what I am think right now:")
+guess = int(temp)
+while guess != 8:
+    temp = input("Guess again:")
+    guess = int(temp)
+    if guess == 8:
+        print("Wow you read my mind!")
+    if guess > 8:
+        print("Too large!")
+    if guess < 8:
+        print("Too small!")
+print("Wow you read my mind!")
+print("Game Over")
+
+
+20171010-2
+#coding=gbk
+print("猜猜我早餐想吃啥~")
+guess=input("你猜吖：")
+if guess==("鸡蛋灌饼"):
+    print('卧槽你是早上那个卖煎饼的大娘么！')
+    print("那要不然为了奖励你让你请我吃早餐好了")
+else:
+    print("你看！所以我说你猜不中吧~~~")
+    print("不过你还是可以请我吃早餐的~~~~")
+print("所以我们去吃好吃的吧！")
+
+
+20171010-3
+#coding=gbk
+Name=input("告诉我你叫啥告诉我告诉我嘛：")
+print("欢迎欢迎！"+Name)
+
+#code=gbk
+
+guess=int(input("猜猜我在想什么数字"))
+
+while guess != 108:
+    
+    guess=int(input("没猜中哦，再猜："))              
+              
+    if guess > 108:
+        print("太大啦！")
+        
+    if guess < 108:
+        print("太小啦！")
+    
+else:
+    print("猜中啦！")
+
+print("不玩儿啦！")
+
+
+20171010-4
+#code=gbk
+
+import random
+
+guess = int(input("猜猜我在想什么数字"))
+Answer = random.randint(1,100)
+
+while guess != Answer:
+    guess=int(input("没猜中哦，再猜："))                      
+    if guess > Answer:
+        print("太大啦！")
+    if guess < Answer:
+        print("太小啦！")
+    
+else:
+    print("猜中啦！")
+
+print("不玩儿啦！")
+
+
+
+
+
+20171010-5
+#code=gbk
+
+import random
+
+print("=========Let's play a game! You have 5 chances to guess!=========")
+
+guess = int(input("Guess what number I have in mind:"))
+answer = random.randint(0,100)
+counter = 1
+
+while (guess != answer) and (counter < 5):
+     if guess < answer:
+          print("Too small!")
+     if guess > answer:
+          print("Too large!")
+     guess = int(input("Try again:"))
+     counter += 1 
+     
+if guess == answer:
+     print("Bingo! You read my mind!")
+
+else:
+     print("Sorry you lost you chances, the answer is " + str(answer)) 
+
+print("Thanks for playing!")
