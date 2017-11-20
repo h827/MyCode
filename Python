@@ -105,3 +105,19 @@ else:
      print("Sorry you lost you chances, the answer is " + str(answer)) 
 
 print("Thanks for playing!")
+
+----------------------------------我是分割线---------------------------------------------------------
+
+20171121
+def myfirstfunction():
+    print("this is my first function built")
+    print("I am so thrilled!")
+
+for i in range(2):
+    myfirstfunction()
+
+def MyWords (name,adj):
+    print(name+" are "+adj)
+
+MyWords (name="You", adj='beautiful!')
+MyWords ("these", "nice")
